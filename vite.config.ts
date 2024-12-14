@@ -1,14 +1,13 @@
-/// <reference types="vitest" />
+import tailwindcss from '@tailwindcss/vite'
+import react from '@vitejs/plugin-react'
+import { resolve } from 'node:path'
+import { defineConfig } from 'vite'
+import dts from 'vite-plugin-dts'
 
-import react from '@vitejs/plugin-react';
-import { resolve } from 'node:path';
-import { defineConfig } from 'vite';
-import dts from 'vite-plugin-dts';
-
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
+    tailwindcss(),
     dts({
       insertTypesEntry: true,
       exclude: [
@@ -23,7 +22,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.tsx'),
-      name: 'holakirr-snow-ui',
+      name: 'holakirr-snow-ui-icons',
       formats: ['es', 'umd'],
       fileName: (format) => `main.${format === 'umd' ? 'umd.cjs' : 'js'}`,
     },
@@ -38,12 +37,4 @@ export default defineConfig({
       },
     },
   },
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    coverage: {
-      provider: 'v8',
-      reporter: ['text', 'json', 'html'],
-    },
-  },
-});
+})

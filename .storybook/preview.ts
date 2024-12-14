@@ -1,9 +1,10 @@
-import type { Preview } from '@storybook/react';
-import '../src/index.css';
+import type { Preview } from '@storybook/react'
+import 'holakirr-snow-ui/index.css'
+
+import '../src/lib/index.css'
 
 const preview: Preview = {
   parameters: {
-    actions: { argTypesRegex: '^on[A-Z].*' },
     controls: {
       matchers: {
         color: /(background|color)$/i,
@@ -12,6 +13,6 @@ const preview: Preview = {
     },
     layout: 'centered',
   },
-};
+}
 
-export default preview;
+export default preview
