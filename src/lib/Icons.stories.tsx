@@ -129,7 +129,7 @@ const meta = {
         width: '100%',
         display: 'grid',
         gridTemplateColumns: 'repeat(4, 1fr)',
-        rowGap: '2rem',
+        rowGap: '2.5rem',
       }}
     >
       {Object.values(allIcons).map((Icon) => (
