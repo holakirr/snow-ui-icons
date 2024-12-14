@@ -106,7 +106,7 @@ const allIcons = {
 }
 
 const meta = {
-  title: 'Design resources/Icons/All Icons',
+  title: 'Icons',
   argTypes: {
     weight: {
       control: 'radio',
@@ -172,7 +172,14 @@ const Template: (iconName: keyof typeof allIcons) => Story = (iconName) => ({
       Icon && (
         <div className="flex gap-8">
           {(Object.keys(ICON_WEIGHTS) as IconWeight[]).map((weight) => (
-            <div className="flex flex-col gap-1 items-center" key={weight}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                flexDirection: 'column',
+              }}
+              key={weight}
+            >
               <Icon
                 {...args}
                 weight={weight}
