@@ -27,18 +27,12 @@ export default defineConfig({
       fileName: (format) => `main.${format === 'umd' ? 'umd.cjs' : 'js'}`,
     },
     rollupOptions: {
-      external: [
-        'react',
-        'react-dom',
-        'react/jsx-runtime',
-        '@phosphor-icons/react/dist/ssr',
-      ],
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
           'react/jsx-runtime': 'jsxRuntime',
-          '@phosphor-icons/react/dist/ssr': '@phosphor-icons/react/dist/ssr',
         },
       },
     },
