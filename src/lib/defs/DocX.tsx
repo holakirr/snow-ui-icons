@@ -1,10 +1,9 @@
-import { Fragment } from 'react/jsx-runtime'
 import type { CustomIconWeights } from '../types'
 
 export const DocXWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <Fragment key="DocXRegular">
+    <g key="DocXRegular">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -37,6 +36,6 @@ export const DocXWeights: CustomIconWeights = new Map([
         d="M5.46191 21.5215L3.5 11.5H5.20215L6.43262 18.3838L7.93652 11.5H9.91211L11.3545 18.5L12.6191 11.5H14.2871L12.291 21.5215H10.5273L8.88672 14.0293L7.25977 21.5215H5.46191Z"
         fill="white"
       />
-    </Fragment>,
+    </g>,
   ],
 ])

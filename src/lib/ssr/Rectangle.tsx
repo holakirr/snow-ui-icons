@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { RectangleWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const RectangleIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={RectangleWeights} />
+const RectangleIcon: Icon = (props) => (
+  <IconBase {...props} weights={RectangleWeights} />
 )
 
 RectangleIcon.displayName = 'RectangleIcon'

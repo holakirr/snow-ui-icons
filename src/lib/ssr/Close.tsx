@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { CloseWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const CloseIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={CloseWeights} />
+const CloseIcon: Icon = (props) => (
+  <IconBase {...props} weights={CloseWeights} />
 )
 
 CloseIcon.displayName = 'CloseIcon'

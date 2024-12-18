@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { HelpWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const HelpIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={HelpWeights} />
-)
+const HelpIcon: Icon = (props) => <IconBase {...props} weights={HelpWeights} />
 
 HelpIcon.displayName = 'HelpIcon'
 export { HelpIcon }

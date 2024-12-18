@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { ClipboardWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const ClipboardIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={ClipboardWeights} />
+const ClipboardIcon: Icon = (props) => (
+  <IconBase {...props} weights={ClipboardWeights} />
 )
 
 ClipboardIcon.displayName = 'ClipboardIcon'

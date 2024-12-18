@@ -1,9 +1,17 @@
-import type { IconProps, IconWeight } from '@phosphor-icons/react'
-import type { JSX, ReactElement } from 'react'
+import type { IconProps } from '@phosphor-icons/react'
+import type { FC, ReactElement } from 'react'
 
 export type IconSize = 16 | 20 | 24 | 28 | 32 | 40 | 48 | 80
 
 export type CustomIconWeights = Map<IconWeight, ReactElement>
+
+export type IconWeight =
+  | 'bold'
+  | 'duotone'
+  | 'fill'
+  | 'light'
+  | 'regular'
+  | 'thin'
 
 export interface IconBaseProps extends IconProps {
   weights: CustomIconWeights
@@ -19,10 +27,29 @@ export interface CustomIconProps extends IconProps {
   alt: string
 }
 
-type CustomIconType = (props: CustomIconProps) => JSX.Element
-
 export type CustomIcon = CustomIconType & { displayName: string }
 
-export type BaseIcon = (props: IconBaseProps) => JSX.Element
+export interface IconBaseProps extends IconProps {
+  weights: CustomIconWeights
+}
 
-export type Status = 'success' | 'error' | 'progress'
+/**
+ * Represents the properties for a custom icon.
+ */
+export interface CustomIconProps extends IconProps {
+  /**
+   * The alternative text for the icon.
+   */
+  alt: string
+
+  /**
+   * The size of the icon.
+   */
+  size: IconSize
+}
+
+type CustomIconType = FC<CustomIconProps>
+
+export type Icon = CustomIconType & { displayName?: string }
+
+export type BaseIcon = FC<IconBaseProps>

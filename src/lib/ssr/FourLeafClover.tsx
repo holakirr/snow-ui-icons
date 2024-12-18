@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { FourLeafCloverWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const FourLeafCloverIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={FourLeafCloverWeights} />
+const FourLeafCloverIcon: Icon = (props) => (
+  <IconBase {...props} weights={FourLeafCloverWeights} />
 )
 
 FourLeafCloverIcon.displayName = 'FourLeafCloverIcon'

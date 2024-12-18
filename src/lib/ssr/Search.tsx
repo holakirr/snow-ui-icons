@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { SearchWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const SearchIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={SearchWeights} />
+const SearchIcon: Icon = (props) => (
+  <IconBase {...props} weights={SearchWeights} />
 )
 
 SearchIcon.displayName = 'SearchIcon'

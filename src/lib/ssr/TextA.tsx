@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { TextAWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const TextAIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={TextAWeights} />
+const TextAIcon: Icon = (props) => (
+  <IconBase {...props} weights={TextAWeights} />
 )
 
 TextAIcon.displayName = 'TextAIcon'

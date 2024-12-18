@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { ExplainWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const ExplainIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={ExplainWeights} />
+const ExplainIcon: Icon = (props) => (
+  <IconBase {...props} weights={ExplainWeights} />
 )
 
 ExplainIcon.displayName = 'ExplainIcon'

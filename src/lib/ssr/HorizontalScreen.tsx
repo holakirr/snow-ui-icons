@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { HorizontalScreenWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const HorizontalScreenIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={HorizontalScreenWeights} />
+const HorizontalScreenIcon: Icon = (props) => (
+  <IconBase {...props} weights={HorizontalScreenWeights} />
 )
 
 HorizontalScreenIcon.displayName = 'HorizontalScreenIcon'

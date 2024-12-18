@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { AddWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const AddIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={AddWeights} />
-)
+const AddIcon: Icon = (props) => <IconBase {...props} weights={AddWeights} />
 
 AddIcon.displayName = 'AddIcon'
 export { AddIcon }

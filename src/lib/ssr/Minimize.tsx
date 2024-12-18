@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { MinimizeWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const MinimizeIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={MinimizeWeights} />
+const MinimizeIcon: Icon = (props) => (
+  <IconBase {...props} weights={MinimizeWeights} />
 )
 
 MinimizeIcon.displayName = 'MinimizeIcon'

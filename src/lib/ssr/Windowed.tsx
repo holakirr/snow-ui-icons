@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { WindowedWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const WindowedIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={WindowedWeights} />
+const WindowedIcon: Icon = (props) => (
+  <IconBase {...props} weights={WindowedWeights} />
 )
 
 WindowedIcon.displayName = 'WindowedIcon'

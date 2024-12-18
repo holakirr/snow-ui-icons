@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { DotWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const DotIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={DotWeights} />
-)
+const DotIcon: Icon = (props) => <IconBase {...props} weights={DotWeights} />
 
 DotIcon.displayName = 'DotIcon'
 export { DotIcon }

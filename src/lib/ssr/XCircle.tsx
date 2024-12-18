@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { XCircleWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const XCircleIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={XCircleWeights} />
+const XCircleIcon: Icon = (props) => (
+  <IconBase {...props} weights={XCircleWeights} />
 )
 
 XCircleIcon.displayName = 'XCircleIcon'

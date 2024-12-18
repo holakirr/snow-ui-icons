@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { StarWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const StarIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={StarWeights} />
-)
+const StarIcon: Icon = (props) => <IconBase {...props} weights={StarWeights} />
 
 StarIcon.displayName = 'StarIcon'
 export { StarIcon }

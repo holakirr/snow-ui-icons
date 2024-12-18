@@ -1,4 +1,3 @@
-import { Fragment } from 'react/jsx-runtime'
 import type { CustomIconWeights } from '../types'
 
 export const ArrowLineDownWeights: CustomIconWeights = new Map([
@@ -47,7 +46,7 @@ export const ArrowLineDownWeights: CustomIconWeights = new Map([
   ],
   [
     'duotone',
-    <Fragment key="ArrowLineDownDuotone">
+    <g key="ArrowLineDownDuotone">
       <path
         d="M14.5309 21.3708L5.3065 11.8337C4.65201 11.157 5.11555 10 6.04114 10H25.9591C26.8847 10 27.3482 11.157 26.6937 11.8337L17.4694 21.3708C16.6579 22.2097 15.3423 22.2097 14.5309 21.3708Z"
         fillOpacity="0.1"
@@ -57,6 +56,6 @@ export const ArrowLineDownWeights: CustomIconWeights = new Map([
         clipRule="evenodd"
         d="M4.61067 12.629C3.30615 11.2898 4.23006 9 6.07494 9H25.9251C27.7699 9 28.6938 11.2898 27.3893 12.629L18.1964 22.0661C16.9834 23.3113 15.0166 23.3113 13.8036 22.0661L4.61067 12.629ZM25.9251 11.1258H6.07494L15.2679 20.5629C15.6722 20.978 16.3278 20.978 16.7321 20.5629L25.9251 11.1258L26.6572 11.8774L25.9251 11.1258Z"
       />
-    </Fragment>,
+    </g>,
   ],
 ])

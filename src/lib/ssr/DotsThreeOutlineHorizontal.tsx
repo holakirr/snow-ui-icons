@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { DotsThreeOutlineHorizontalWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const DotsThreeOutlineHorizontalIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={DotsThreeOutlineHorizontalWeights} />
+const DotsThreeOutlineHorizontalIcon: Icon = (props) => (
+  <IconBase {...props} weights={DotsThreeOutlineHorizontalWeights} />
 )
 
 DotsThreeOutlineHorizontalIcon.displayName = 'DotsThreeOutlineHorizontalIcon'

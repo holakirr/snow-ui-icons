@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { VariablesWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const VariablesIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={VariablesWeights} />
+const VariablesIcon: Icon = (props) => (
+  <IconBase {...props} weights={VariablesWeights} />
 )
 
 VariablesIcon.displayName = 'VariablesIcon'

@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { GotoWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const GotoIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={GotoWeights} />
-)
+const GotoIcon: Icon = (props) => <IconBase {...props} weights={GotoWeights} />
 
 GotoIcon.displayName = 'GotoIcon'
 export { GotoIcon }

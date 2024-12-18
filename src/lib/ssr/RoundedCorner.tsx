@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { RoundedCornerWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const RoundedCornerIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={RoundedCornerWeights} />
+const RoundedCornerIcon: Icon = (props) => (
+  <IconBase {...props} weights={RoundedCornerWeights} />
 )
 
 RoundedCornerIcon.displayName = 'RoundedCornerIcon'

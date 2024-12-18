@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { OneNoteWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const OneNoteIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={OneNoteWeights} />
+const OneNoteIcon: Icon = (props) => (
+  <IconBase {...props} weights={OneNoteWeights} />
 )
 
 OneNoteIcon.displayName = 'OneNoteIcon'

@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { VerticalScreenWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const VerticalScreenIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={VerticalScreenWeights} />
+const VerticalScreenIcon: Icon = (props) => (
+  <IconBase {...props} weights={VerticalScreenWeights} />
 )
 
 VerticalScreenIcon.displayName = 'VerticalScreenIcon'

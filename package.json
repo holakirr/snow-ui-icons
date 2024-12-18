@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
-    "holakirr-snow-ui": "^0.12.5"
+    "holakirr-snow-ui": "^0.12.6"
   },
   "devDependencies": {
     "tailwindcss": "^4.0.0-beta.7",

@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { DocXWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const DocXIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={DocXWeights} />
-)
+const DocXIcon: Icon = (props) => <IconBase {...props} weights={DocXWeights} />
 
 DocXIcon.displayName = 'DocXIcon'
 export { DocXIcon }

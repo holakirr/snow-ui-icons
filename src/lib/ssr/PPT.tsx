@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { PPTWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const PPTIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={PPTWeights} />
-)
+const PPTIcon: Icon = (props) => <IconBase {...props} weights={PPTWeights} />
 
 PPTIcon.displayName = 'PPTIcon'
 export { PPTIcon }

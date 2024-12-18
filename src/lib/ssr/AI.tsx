@@ -1,10 +1,8 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { AIWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const AIIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={AIWeights} />
-)
+const AIIcon: Icon = (props) => <IconBase {...props} weights={AIWeights} />
 
 AIIcon.displayName = 'AIIcon'
 export { AIIcon }

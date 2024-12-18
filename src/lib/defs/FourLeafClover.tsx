@@ -1,4 +1,3 @@
-import { Fragment } from 'react/jsx-runtime'
 import type { CustomIconWeights } from '../types'
 
 export const FourLeafCloverWeights: CustomIconWeights = new Map([
@@ -22,7 +21,7 @@ export const FourLeafCloverWeights: CustomIconWeights = new Map([
   ],
   [
     'regular',
-    <Fragment key="FourLeafCloverRegular">
+    <g key="FourLeafCloverRegular">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -43,11 +42,11 @@ export const FourLeafCloverWeights: CustomIconWeights = new Map([
         clipRule="evenodd"
         d="M17 19.2C17 17.985 17.985 17 19.2 17H22.5C25.5376 17 28 19.4624 28 22.5C28 25.5376 25.5376 28 22.5 28C19.4624 28 17 25.5376 17 22.5V19.2ZM19.2 19H22.5C24.433 19 26 20.567 26 22.5C26 24.433 24.433 26 22.5 26C20.567 26 19 24.433 19 22.5V19.2C19 19.0895 19.0895 19 19.2 19Z"
       />
-    </Fragment>,
+    </g>,
   ],
   [
     'bold',
-    <Fragment key="FourLeafCloverBold">
+    <g key="FourLeafCloverBold">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -68,7 +67,7 @@ export const FourLeafCloverWeights: CustomIconWeights = new Map([
         clipRule="evenodd"
         d="M17 19.2C17 17.985 17.985 17 19.2 17H22.5C25.5376 17 28 19.4624 28 22.5C28 25.5376 25.5376 28 22.5 28C19.4624 28 17 25.5376 17 22.5V19.2ZM20 22.5V20H22.5C23.8807 20 25 21.1193 25 22.5C25 23.8807 23.8807 25 22.5 25C21.1193 25 20 23.8807 20 22.5Z"
       />
-    </Fragment>,
+    </g>,
   ],
   [
     'fill',
@@ -81,7 +80,7 @@ export const FourLeafCloverWeights: CustomIconWeights = new Map([
   ],
   [
     'duotone',
-    <Fragment key="FourLeafCloverDuotone">
+    <g key="FourLeafCloverDuotone">
       <path
         d="M9.5 4C6.46243 4 4 6.46243 4 9.5C4 12.5376 6.46243 15 9.5 15H12.8C14.015 15 15 14.015 15 12.8V9.5C15 6.46243 12.5376 4 9.5 4Z"
         fillOpacity="0.1"
@@ -118,6 +117,6 @@ export const FourLeafCloverWeights: CustomIconWeights = new Map([
         clipRule="evenodd"
         d="M17 19.2C17 17.985 17.985 17 19.2 17H22.5C25.5376 17 28 19.4624 28 22.5C28 25.5376 25.5376 28 22.5 28C19.4624 28 17 25.5376 17 22.5V19.2ZM19.2 19H22.5C24.433 19 26 20.567 26 22.5C26 24.433 24.433 26 22.5 26C20.567 26 19 24.433 19 22.5V19.2C19 19.0895 19.0895 19 19.2 19Z"
       />
-    </Fragment>,
+    </g>,
   ],
 ])

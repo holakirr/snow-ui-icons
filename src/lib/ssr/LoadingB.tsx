@@ -1,15 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { LoadingBWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const LoadingBIcon: CustomIcon = (props) => (
-  <CustomIconBase
-    {...props}
-    weights={LoadingBWeights}
-    style={{
-      animation: 'loaderB  1.5s infinite ease-in-out',
-    }}
-  />
+const LoadingBIcon: Icon = (props) => (
+  <IconBase {...props} viewBox="0 0 24 24" weights={LoadingBWeights} />
 )
 
 LoadingBIcon.displayName = 'LoadingBIcon'

@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { SnowUIWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const SnowUIIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={SnowUIWeights} />
+const SnowUIIcon: Icon = (props) => (
+  <IconBase {...props} weights={SnowUIWeights} />
 )
 
 SnowUIIcon.displayName = 'SnowUIIcon'

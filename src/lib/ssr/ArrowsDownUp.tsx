@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { ArrowsDownUpWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const ArrowsDownUpIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={ArrowsDownUpWeights} />
+const ArrowsDownUpIcon: Icon = (props) => (
+  <IconBase {...props} weights={ArrowsDownUpWeights} />
 )
 
 ArrowsDownUpIcon.displayName = 'ArrowsDownUpIcon'

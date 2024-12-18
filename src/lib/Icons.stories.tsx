@@ -32,6 +32,7 @@ import {
   HelpIcon,
   HorizontalScreenIcon,
   LineIcon,
+  LoadingAIcon,
   LoadingBIcon,
   MaximizeIcon,
   MinimizeIcon,
@@ -39,7 +40,7 @@ import {
   OneNoteIcon,
   PPTIcon,
   RectangleIcon,
-  RightbarIcon,
+  RightBarIcon,
   RoundedCornerIcon,
   SearchIcon,
   SnowUIIcon,
@@ -83,6 +84,7 @@ const allIcons = {
   HelpIcon,
   HorizontalScreenIcon,
   LineIcon,
+  LoadingAIcon,
   LoadingBIcon,
   MaximizeIcon,
   MinimizeIcon,
@@ -90,7 +92,7 @@ const allIcons = {
   OneNoteIcon,
   PPTIcon,
   RectangleIcon,
-  RightbarIcon,
+  RightbarIcon: RightBarIcon,
   RoundedCornerIcon,
   SearchIcon,
   SnowUIIcon,
@@ -119,7 +121,7 @@ const meta = {
     },
   },
   args: {
-    size: ICON_SIZES[24],
+    size: ICON_SIZES[32],
     weight: 'regular',
     className: 'fill-primary-brand',
   },
@@ -427,6 +429,14 @@ export const LineIconStory: Story = {
   },
 }
 
+export const LoadingAIconStory: Story = {
+  name: 'LoadingAIcon',
+  ...Template(LoadingAIcon.displayName as keyof typeof allIcons),
+  args: {
+    alt: LoadingAIcon.displayName as string,
+  },
+}
+
 export const LoadingBIconStory: Story = {
   name: 'LoadingBIcon',
   ...Template(LoadingBIcon.displayName as keyof typeof allIcons),
@@ -485,9 +495,9 @@ export const RectangleIconStory: Story = {
 
 export const RightbarIconStory: Story = {
   name: 'RightbarIcon',
-  ...Template(RightbarIcon.displayName as keyof typeof allIcons),
+  ...Template(RightBarIcon.displayName as keyof typeof allIcons),
   args: {
-    alt: RightbarIcon.displayName as string,
+    alt: RightBarIcon.displayName as string,
   },
 }
 

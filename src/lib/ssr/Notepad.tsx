@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { NotepadWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const NotepadIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={NotepadWeights} />
+const NotepadIcon: Icon = (props) => (
+  <IconBase {...props} weights={NotepadWeights} />
 )
 
 NotepadIcon.displayName = 'NotepadIcon'

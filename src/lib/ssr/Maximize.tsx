@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { MaximizeWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const MaximizeIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={MaximizeWeights} />
+const MaximizeIcon: Icon = (props) => (
+  <IconBase {...props} weights={MaximizeWeights} />
 )
 
 MaximizeIcon.displayName = 'MaximizeIcon'

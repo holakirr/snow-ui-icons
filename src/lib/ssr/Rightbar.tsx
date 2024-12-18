@@ -1,10 +1,10 @@
-import { CustomIconBase } from '../IconBase'
-import { RightbarWeights as RightBarWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import { IconBase } from '../IconBase'
+import { RightBarWeights } from '../defs'
+import type { Icon } from '../types'
 
-const RightBarIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={RightBarWeights} />
+const RightBarIcon: Icon = (props) => (
+  <IconBase {...props} weights={RightBarWeights} />
 )
 
 RightBarIcon.displayName = 'RightbarIcon'
-export { RightBarIcon as RightbarIcon }
+export { RightBarIcon }

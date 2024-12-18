@@ -1,8 +1,6 @@
-import type { BaseIcon, IconBaseProps } from './types'
+import type { BaseIcon } from './types'
 
-const role = 'img'
-
-export const CustomIconBase: BaseIcon = ({
+export const IconBase: BaseIcon = ({
   alt,
   color = 'currentColor',
   size,
@@ -12,7 +10,7 @@ export const CustomIconBase: BaseIcon = ({
   className,
   ref,
   ...restProps
-}: IconBaseProps) => (
+}) => (
   <svg
     ref={ref}
     xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +21,7 @@ export const CustomIconBase: BaseIcon = ({
     transform={mirrored ? 'scale(-1, 1)' : undefined}
     style={{ transition: 'all .15s' }}
     className={className}
-    role={role}
+    role="img"
     {...restProps}
   >
     <title>{alt}</title>

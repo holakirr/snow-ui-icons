@@ -1,9 +1,9 @@
-import { CustomIconBase } from '../IconBase'
+import { IconBase } from '../IconBase'
 import { FourPointedStarWeights } from '../defs'
-import type { CustomIcon } from '../types'
+import type { Icon } from '../types'
 
-const FourPointedStarIcon: CustomIcon = (props) => (
-  <CustomIconBase {...props} weights={FourPointedStarWeights} />
+const FourPointedStarIcon: Icon = (props) => (
+  <IconBase {...props} weights={FourPointedStarWeights} />
 )
 
 FourPointedStarIcon.displayName = 'FourPointedStarIcon'
