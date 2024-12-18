@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const GotoWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="GotoRegular">
+    <g key="GotoRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

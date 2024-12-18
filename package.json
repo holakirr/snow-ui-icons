@@ -1,7 +1,7 @@
 {
   "name": "holakirr-snow-ui-icons",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": ["dist"],
@@ -54,5 +54,6 @@
   },
   "engines": {
     "bun": ">=1.0.0"
-  }
+  },
+  "license": "MIT"
 }

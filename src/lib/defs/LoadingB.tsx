@@ -8,7 +8,7 @@ const height = 5
 export const LoadingBWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="LoadingBRegular">
+    <g key="LoadingBRegular" stroke="none">
       <rect
         x={x}
         y={y}

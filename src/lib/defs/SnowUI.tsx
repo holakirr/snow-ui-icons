@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const SnowUIWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="SnowIcon">
+    <g key="SnowIcon" stroke="none">
       <path
         d="M25.8 11.8C28.1196 11.8 30 13.6804 30 16C30 18.3196 28.1196 20.2 25.8 20.2L6.2 20.2C3.8804 20.2 2 18.3196 2 16C2 13.6804 3.8804 11.8 6.2 11.8L25.8 11.8Z"
         fill="black"

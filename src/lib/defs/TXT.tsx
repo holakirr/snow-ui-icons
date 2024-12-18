@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const TXTWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="TXTRegular">
+    <g key="TXTRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

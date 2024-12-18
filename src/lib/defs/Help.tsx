@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const HelpWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="HelpRegular">
+    <g key="HelpRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

@@ -1,4 +1,3 @@
-import type { IconWeight } from '@phosphor-icons/react'
 import type { Meta, StoryObj } from '@storybook/react'
 import { expect, within } from '@storybook/test'
 import { Text } from 'holakirr-snow-ui'
@@ -92,7 +91,7 @@ const allIcons = {
   OneNoteIcon,
   PPTIcon,
   RectangleIcon,
-  RightbarIcon: RightBarIcon,
+  RightBarIcon,
   RoundedCornerIcon,
   SearchIcon,
   SnowUIIcon,
@@ -120,11 +119,7 @@ const meta = {
       options: Object.keys(ICON_SIZES),
     },
   },
-  args: {
-    size: ICON_SIZES[32],
-    weight: 'regular',
-    className: 'fill-primary-brand',
-  },
+  args: {},
   render: (args) => (
     <div
       style={{
@@ -157,23 +152,18 @@ type Story = StoryObj<typeof meta>
 
 export const AllIcons: Story = {
   args: {
-    size: 24,
-    weight: 'regular',
-    className: 'fill-primary-brand',
     alt: 'Icons',
   },
 }
 
 const Template: (iconName: keyof typeof allIcons) => Story = (iconName) => ({
-  args: {
-    alt: 'icon',
-  },
   render: (args) => {
     const Icon = allIcons[iconName]
+
     return (
       Icon && (
         <div className="flex gap-8">
-          {(Object.keys(ICON_WEIGHTS) as IconWeight[]).map((weight) => (
+          {Object.values(ICON_WEIGHTS).map((weight) => (
             <div
               style={{
                 display: 'flex',
@@ -187,7 +177,7 @@ const Template: (iconName: keyof typeof allIcons) => Story = (iconName) => ({
                 weight={weight}
                 alt={`Icon ${iconName}, weight ${weight}`}
               />
-              <span className="text-black-100 w-min">{weight}</span>
+              <Text className="text-black-100 w-min">{weight}</Text>
             </div>
           ))}
         </div>

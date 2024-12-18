@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const NotepadWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="NotepadRegular">
+    <g key="NotepadRegular" stroke="none">
       <path
         d="M6 5C6 3.89543 6.89543 3 8 3H20L26 9V27C26 28.1046 25.1046 29 24 29H8C6.89543 29 6 28.1046 6 27V5Z"
         fill="url(#paint0_linear_52206_162198)"

@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const WindowedWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="WindowedRegular">
+    <g key="WindowedRegular" stroke="none">
       <path d="M12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9H20C21.6569 9 23 10.3431 23 12V19.5C23 20.0523 23.4477 20.5 24 20.5C24.5523 20.5 25 20.0523 25 19.5V12C25 9.23858 22.7614 7 20 7H12Z" />
       <path
         fillRule="evenodd"

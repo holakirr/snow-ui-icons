@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const RightBarWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="RightBarRegular">
+    <g key="RightBarRegular" stroke="none">
       <path
         d="M22 26C21.7347 26 21.4805 25.8947 21.2928 25.7072C21.1053 25.5195 21 25.2653 21 25V7C21 6.73474 21.1053 6.48047 21.2928 6.29285C21.4805 6.10535 21.7347 6 22 6H28V26H22Z"
         fillOpacity="0.1"

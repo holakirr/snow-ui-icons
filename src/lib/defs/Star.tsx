@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const StarWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="StarRegular">
+    <g key="StarRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
@@ -18,7 +18,7 @@ export const StarWeights: CustomIconWeights = new Map([
   ],
   [
     'fill',
-    <g key="StarFill">
+    <g key="StarFill" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

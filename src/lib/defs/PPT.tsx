@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const PPTWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="PPTRegular">
+    <g key="PPTRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

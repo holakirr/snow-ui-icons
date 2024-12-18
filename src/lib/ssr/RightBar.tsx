@@ -6,5 +6,5 @@ const RightBarIcon: Icon = (props) => (
   <IconBase {...props} weights={RightBarWeights} />
 )
 
-RightBarIcon.displayName = 'RightbarIcon'
+RightBarIcon.displayName = 'RightBarIcon'
 export { RightBarIcon }

@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const XLSXWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="XLSXRegular">
+    <g key="XLSXRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

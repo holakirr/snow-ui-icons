@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const FourPointedStarWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="FourPointedStarRegular">
+    <g key="FourPointedStarRegular" stroke="none">
       <path
         d="M14.8315 22.5437L9.45631 17.1685C8.8479 16.5601 8.8479 15.4399 9.45631 14.8315L14.8315 9.45631C15.4399 8.8479 16.5601 8.8479 17.1685 9.45631L22.5437 14.8315C23.1521 15.4399 23.1521 16.5601 22.5437 17.1685L17.1685 22.5437C16.5601 23.1521 15.4399 23.1521 14.8315 22.5437Z"
         fillOpacity="0.1"

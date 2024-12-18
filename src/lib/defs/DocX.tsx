@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const DocXWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="DocXRegular">
+    <g key="DocXRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"

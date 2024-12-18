@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const OneNoteWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="OneNoteRegular">
+    <g key="OneNoteRegular" stroke="none">
       <path
         d="M28 3.5C28 2.67157 28.6716 2 29.5 2H30.5C31.3284 2 32 2.67157 32 3.5V8.5C32 9.32843 31.3284 10 30.5 10H29.5C28.6716 10 28 9.32843 28 8.5V3.5Z"
         fill="#AE4BD5"

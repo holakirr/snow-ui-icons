@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const ExplainWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="ExplainRegular">
+    <g key="ExplainRegular" stroke="none">
       <path d="M5 9H27C27.5523 9 28 8.55228 28 8C28 7.44772 27.5523 7 27 7H5C4.44772 7 4 7.44772 4 8C4 8.55228 4.44772 9 5 9Z" />
       <path d="M5 17H14C14.5523 17 15 16.5523 15 16C15 15.4477 14.5523 15 14 15H5C4.44772 15 4 15.4477 4 16C4 16.5523 4.44772 17 5 17Z" />
       <path d="M5 25H10C10.5523 25 11 24.5523 11 24C11 23.4477 10.5523 23 10 23H5C4.44772 23 4 23.4477 4 24C4 24.5523 4.44772 25 5 25Z" />

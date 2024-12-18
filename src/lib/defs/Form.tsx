@@ -3,7 +3,7 @@ import type { CustomIconWeights } from '../types'
 export const FormWeights: CustomIconWeights = new Map([
   [
     'regular',
-    <g key="FormRegular">
+    <g key="FormRegular" stroke="none">
       <path
         fillRule="evenodd"
         clipRule="evenodd"
