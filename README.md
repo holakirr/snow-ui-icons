@@ -1,7 +1,7 @@
-# holakirr-snow-ui-icons
+# @holakirr/snow-ui-icons
 
 SnowUI Icons is a React icons library implementation of icons from [SnowUI design kit](https://snowui.byewind.com) by [ByeWind](https://byewind.com/). Implemented and improved by [holakirr](https://github.com/holakirr).
-Build your design using [it](https://www.figma.com/community/file/1301134685302006646). The best experience you will get using it with [holakirr-snow-ui](https://www.npmjs.com/package/@holakirr/snow-ui-icons)
+Build your design using [it](https://www.figma.com/community/file/1301134685302006646). The best experience you will get using it with [@holakirr/snow-ui](https://www.npmjs.com/package/@holakirr/snow-ui)
 
 [Storybook](https://snow-ui-icons.holakirr.com)
 
@@ -16,18 +16,12 @@ Take a look at my [CV](https://holakirr.com) =)
 - 🚀 Vite for fast development and building
 - ⚡️ Powered by Bun for fast package management and running scripts
 
-## Installation
-
-```bash
-npm i holakirr-snow-ui-icons
-```
-
 ## Usage
 
 Don't forget to install @phosphor-icons/react. Just import the icon you need and use it in your component.
 
 ```bash
-bun add holakirr-snow-ui
+bun add @holakirr/snow-ui
 ```
 
 ```jsx
@@ -36,7 +30,7 @@ import {
 	LoadingAIcon,
 	FourLeafCloverIcon,
 	StatusIcon,
-} from 'holakirr-snow-ui-icons'
+} from '@holakirr/snow-ui-icons'
 
 const App = () => {
 	return (
@@ -69,7 +63,7 @@ Components can accept arbitrary SVG elements as children, so long as they are va
 You may wish to import all icons at once for use in your project, though depending on your bundler this could prevent tree-shaking and make your app's bundle larger.
 
 ```jsx
-import \* as Icon from "holakirr-snow-ui-icons";
+import \* as Icon from "@holakirr/snow-ui-icons";
 
 <Icon.Smiley />
 <Icon.Folder weight="thin" />
@@ -84,7 +78,7 @@ Next, create a new React component, importing the `IconBase` component, as well 
 
 ````jsx
 import { forwardRef, ReactElement } from "react";
-import { Icon, IconBase, IconWeight } from "holakirr-snow-ui-icons";
+import { Icon, IconBase, IconWeight } from "@holakirr/snow-ui-icons";
 
 const weights = new Map<IconWeight, ReactElement>([
   ["thin", <path d="..." />],

@@ -22,7 +22,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: resolve(__dirname, 'src/main.tsx'),
-      name: 'holakirr-snow-ui-icons',
+      name: '@holakirr/snow-ui-icons',
       formats: ['es', 'umd'],
       fileName: (format) => `main.${format === 'umd' ? 'umd.cjs' : 'js'}`,
     },
