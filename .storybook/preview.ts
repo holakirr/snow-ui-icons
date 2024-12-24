@@ -1,5 +1,6 @@
 import type { Preview } from '@storybook/react'
-import 'holakirr-snow-ui/index.css'
+
+import '@holakirr/snow-ui/index.css'
 
 const preview: Preview = {
   parameters: {

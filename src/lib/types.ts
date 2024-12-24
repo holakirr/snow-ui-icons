@@ -22,3 +22,5 @@ export interface CustomIconProps extends IconProps {
 export type Icon = FC<CustomIconProps>
 
 export type BaseIcon = FC<IconBaseProps>
+
+export type Status = 'progress' | 'error' | 'success'

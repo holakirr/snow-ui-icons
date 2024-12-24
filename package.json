@@ -1,12 +1,32 @@
 {
-  "name": "holakirr-snow-ui-icons",
+  "name": "@holakirr/snow-ui-icons",
   "private": false,
-  "version": "1.0.2",
+  "version": "1.0.0",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
   "files": ["dist"],
   "type": "module",
-  "packageManager": "bun@1.1.39",
+  "author": {
+    "name": "Kirill Petunin",
+    "email": "kpetunin@icloud.com",
+    "url": "https://holakirr.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holakirr/snow-ui-icons.git#main"
+  },
+  "homepage": "https://snow-ui-icons.holakirr.com",
+  "description": "SnowUI is a React component library designed by ByeWind, implemented and improved by holakirr team for creating beautiful and interactive user interfaces. And this is a part of ui-kit. Icons from original design.",
+  "keywords": [
+    "react",
+    "ui",
+    "snowui",
+    "snow",
+    "icons",
+    "snow-ui",
+    "snow-ui-icons"
+  ],
+  "packageManager": "bun@1.1.42",
   "scripts": {
     "build": "tsc -b && vite build",
     "lint": "biome check .",
@@ -20,15 +40,11 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
-  "dependencies": {
-    "holakirr-snow-ui": "^0.12.6"
-  },
   "devDependencies": {
-    "@phosphor-icons/react": "^2.1.7",
-    "tailwindcss": "^4.0.0-beta.7",
-    "@tailwindcss/vite": "^4.0.0-beta.7",
+    "tailwindcss": "^4.0.0-beta.8",
+    "@tailwindcss/vite": "^4.0.0-beta.8",
     "@biomejs/biome": "^1.9.4",
-    "@chromatic-com/storybook": "^3.2.2",
+    "@chromatic-com/storybook": "^3.2.3",
     "@storybook/addon-essentials": "^8.4.7",
     "@storybook/addon-interactions": "^8.4.7",
     "@storybook/addon-links": "^8.4.7",
@@ -40,7 +56,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.1.0",
     "@types/node": "^22.10.2",
-    "@types/react": "^19.0.1",
+    "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
     "@vitejs/plugin-react": "^4.3.4",
     "autoprefixer": "^10.4.20",
@@ -49,11 +65,15 @@
     "react-dom": "^19.0.0",
     "storybook": "^8.4.7",
     "typescript": "^5.7.2",
-    "vite": "^6.0.3",
-    "vite-plugin-dts": "^4.3.0"
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.4.0",
+    "@holakirr/snow-ui": "^0.0.1"
   },
   "engines": {
     "bun": ">=1.0.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.7"
+  }
 }

@@ -20,3 +20,9 @@ export const ICON_SIZES: { [K in IconSize]: K } = {
   48: 48,
   80: 80,
 }
+
+export const STATUSES = {
+  progress: 'progress',
+  error: 'error',
+  success: 'success',
+}

@@ -1,9 +1,9 @@
 # holakirr-snow-ui-icons
 
-SnowUI Icons is a React icons library implementation of [SnowUI design kit](https://snowui.byewind.com) by [ByeWind](https://byewind.com/). Implemented and improved by [holakirr](https://github.com/holakirr).
-Build your design using [it](https://www.figma.com/community/file/1301134685302006646). The best experience you will get using it with [holakirr-snow-ui](https://www.npmjs.com/package/holakirr-snow-ui)
+SnowUI Icons is a React icons library implementation of icons from [SnowUI design kit](https://snowui.byewind.com) by [ByeWind](https://byewind.com/). Implemented and improved by [holakirr](https://github.com/holakirr).
+Build your design using [it](https://www.figma.com/community/file/1301134685302006646). The best experience you will get using it with [holakirr-snow-ui](https://www.npmjs.com/package/@holakirr/snow-ui-icons)
 
-[Storybook](https://snow-ui-icons.holakirr.com/?path=/)
+[Storybook](https://snow-ui-icons.holakirr.com)
 
 Take a look at my [CV](https://holakirr.com) =)
 
@@ -12,7 +12,7 @@ Take a look at my [CV](https://holakirr.com) =)
 - 🎨 49 icons ready to use
 - 📚 Storybook for component documentation and development
 - 🔍 TypeScript for type safety
-- ✅ Comprehensive testing setup with cromatic
+- ✅ Comprehensive testing setup with chromatic
 - 🚀 Vite for fast development and building
 - ⚡️ Powered by Bun for fast package management and running scripts
 
@@ -24,7 +24,7 @@ npm i holakirr-snow-ui-icons
 
 ## Usage
 
-Just import the icon you need and use it in your component.
+Don't forget to install @phosphor-icons/react. Just import the icon you need and use it in your component.
 
 ```bash
 bun add holakirr-snow-ui
@@ -112,7 +112,7 @@ export default CustomIcon;
 
 ## Related project
 
-[Holakirr Snow UI](https://github.com/holakirr/snow-ui-base)
+[Holakirr Snow UI](https://www.npmjs.com/package/@holakirr/snow-ui)
 
 ## License
 
