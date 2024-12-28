@@ -1,5 +1,4 @@
-import type { IconWeight } from '@phosphor-icons/react'
-import type { IconSize } from './types'
+import type { IconSize, IconWeight } from './types'
 
 export const ICON_WEIGHTS: { [K in IconWeight]: K } = {
   bold: 'bold',

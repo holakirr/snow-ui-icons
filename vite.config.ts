@@ -9,11 +9,9 @@ export default defineConfig({
     react(),
     tailwindcss(),
     dts({
-      insertTypesEntry: true,
+      // insertTypesEntry: true,
       exclude: [
-        'src/test/**/*',
-        'src/**/*.test.tsx',
-        'src/**/*.test.ts',
+        'src/lib/defs/**/*',
         'src/**/*.stories.tsx',
         'src/**/*.stories.ts',
       ],
@@ -27,18 +25,12 @@ export default defineConfig({
       fileName: (format) => `main.${format === 'umd' ? 'umd.cjs' : 'js'}`,
     },
     rollupOptions: {
-      external: [
-        'react',
-        'react-dom',
-        'react/jsx-runtime',
-        '@phosphor-icons/react',
-      ],
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
           'react/jsx-runtime': 'jsxRuntime',
-          '@phosphor-icons/react': '@phosphor-icons/react',
         },
       },
     },

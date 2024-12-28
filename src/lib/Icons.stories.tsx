@@ -1,6 +1,7 @@
 import { Text } from '@holakirr/snow-ui'
 import type { Meta, StoryObj } from '@storybook/react'
 import { expect, within } from '@storybook/test'
+
 import { ICON_SIZES, ICON_WEIGHTS } from './constants'
 import {
   AIIcon,

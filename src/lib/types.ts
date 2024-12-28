@@ -1,7 +1,28 @@
-import type { IconProps, IconWeight } from '@phosphor-icons/react'
-import type { FC, ReactElement } from 'react'
+import type {
+  ComponentPropsWithoutRef,
+  FC,
+  ReactElement,
+  RefAttributes,
+} from 'react'
 
 export type IconSize = 16 | 20 | 24 | 28 | 32 | 40 | 48 | 80
+
+export type IconWeight =
+  | 'thin'
+  | 'light'
+  | 'regular'
+  | 'bold'
+  | 'fill'
+  | 'duotone'
+export interface IconProps
+  extends ComponentPropsWithoutRef<'svg'>,
+    RefAttributes<SVGSVGElement> {
+  alt?: string
+  color?: string
+  size?: string | number
+  weight?: IconWeight
+  mirrored?: boolean
+}
 
 export type CustomIconWeights = Map<IconWeight, ReactElement>
 
