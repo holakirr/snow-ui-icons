@@ -25,12 +25,18 @@ export default defineConfig({
       fileName: (format) => `main.${format === 'umd' ? 'umd.cjs' : 'js'}`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom', 'react/jsx-runtime'],
+      external: [
+        'react',
+        'react-dom',
+        'react/jsx-runtime',
+        '@holakirr/snow-ui',
+      ],
       output: {
         globals: {
           react: 'React',
           'react-dom': 'ReactDOM',
           'react/jsx-runtime': 'jsxRuntime',
+          '@holakirr/snow-ui': 'snowUi',
         },
       },
     },
