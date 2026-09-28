@@ -1,4 +1,3 @@
-import { Typography } from "@holakirr/snow-ui";
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { expect, within } from "storybook/test";
 
@@ -141,7 +140,7 @@ const meta = {
 					}}
 				>
 					<Icon {...args} alt={`Icon ${name}`} />
-					<Typography className="text-black-100">{name}</Typography>
+					<span className="text-sm text-neutral-900">{name}</span>
 				</div>
 			))}
 		</div>
@@ -177,7 +176,7 @@ const Template: (iconName: keyof typeof allIcons) => Story = (iconName) => ({
 							key={weight}
 						>
 							<Icon {...args} weight={weight} alt={`Icon ${iconName}, weight ${weight}`} />
-							<Typography className="text-black-100 w-min">{weight}</Typography>
+							<span className="w-min text-sm text-neutral-900">{weight}</span>
 						</div>
 					))}
 				</div>
