@@ -1,7 +1,7 @@
 import { resolve } from "node:path";
 import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
 import dts from "vite-plugin-dts";
+import { defineConfig } from "vitest/config";
 
 export default defineConfig({
 	plugins: [
@@ -9,6 +9,7 @@ export default defineConfig({
 		dts({
 			exclude: [
 				"src/lib/defs/**/*",
+				"src/test/**/*",
 				"src/**/*.stories.tsx",
 				"src/**/*.stories.ts",
 				"src/**/*.test.tsx",
@@ -33,5 +34,10 @@ export default defineConfig({
 				preserveModulesRoot: "src",
 			},
 		},
+	},
+	test: {
+		environment: "jsdom",
+		setupFiles: ["./src/test/setup.ts"],
+		include: ["src/**/*.test.{ts,tsx}"],
 	},
 });
