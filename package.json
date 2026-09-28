@@ -2,8 +2,18 @@
 	"name": "@holakirr/snow-ui-icons",
 	"private": false,
 	"version": "2.0.0",
-	"main": "dist/main.js",
-	"types": "dist/main.d.ts",
+	"main": "./dist/main.cjs",
+	"module": "./dist/main.js",
+	"types": "./dist/main.d.ts",
+	"exports": {
+		".": {
+			"types": "./dist/main.d.ts",
+			"import": "./dist/main.js",
+			"require": "./dist/main.cjs"
+		},
+		"./package.json": "./package.json"
+	},
+	"sideEffects": false,
 	"files": [
 		"dist"
 	],
